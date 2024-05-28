@@ -23,9 +23,7 @@ services:
     user: "node"
     working_dir: /myapp/frontend
     volumes:
-      # <host-path>:<container-path>
       - ./frontend:/myapp/frontend
-      # - ./frontend/src:/myapp/frontend/src
     command: "npm start dev:watch"
     depends_on:
       - backend
