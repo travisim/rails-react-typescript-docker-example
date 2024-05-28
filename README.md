@@ -24,8 +24,8 @@ $ docker-compose run backend bin/rails db:create db:migrate
 # Start
 $ docker-compose up -d
 
-# Open frontend
-$ open http://localhost:80 # You'll see yaichi page, then click any app
+# Open yaichi reverse proxy 
+$ open http://localhost:80 # You'll see yaichi page, with links to frontend and backend
 
 # Check backend API
 $ curl -H 'Host: backend.localhost' http://localhost/greetings/hello
